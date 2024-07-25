@@ -3,25 +3,25 @@ import { browser } from '$app/environment'
 
 type Theme = 'light' | 'dark'
 
-// we set the theme in `app.html` to prevent flashing
-const userTheme = browser && localStorage.getItem('color-scheme')
-
 // create the store
 export const theme = writable(
-	((browser && localStorage.getItem('color-scheme')) ??
+	browser &&
+		((localStorage.getItem('color-scheme') ??
 		window.matchMedia('(prefers-color-scheme: dark)').matches)
-		? 'dark'
-		: 'light'
+			? 'dark'
+			: 'light')
 )
 
 if (browser) {
 	window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (evt) => {
-		if (!userTheme) {
+		if (!localStorage.getItem('color-scheme')) {
 			const isDarkMode = evt.matches
 			theme.update(() => {
 				const newTheme = isDarkMode ? 'dark' : 'light'
 
 				document.documentElement.setAttribute('data-mode', newTheme)
+
+				return newTheme
 			})
 		}
 	})
