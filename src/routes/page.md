@@ -6,4 +6,4 @@ Here are some links to the pages of this site:
 - [/blog](/blog)
 - [/about](/about)
 - [/contact](/contact)
-- [/rss.xml \(**WIP**\)](/rss.xml)
+- [/rss.xml](/rss.xml)
