@@ -2,7 +2,11 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		extend: {}
+		extend: {},
+		fontFamily: {
+			sans: ['Manrope', 'sans-serif'],
+			monospace: ['JetBrains Mono', 'monospace']
+		}
 	},
 	plugins: [require('@tailwindcss/typography')],
 	darkMode: ['selector', "[data-mode='dark']"]
