@@ -9,10 +9,10 @@
 	</a>
 
 	<ul class="mx-8 sm:flex hidden sm:gap-8 links" aria-label="List of pages to navigate to.">
-		<li><a href="/blog">Blog</a></li>
-		<li><a href="/about">About</a></li>
-		<li><a href="/contact">Contact</a></li>
-		<li><a href="/rss.xml" target="_blank">RSS</a></li>
+		<li><a href="/blog">/blog</a></li>
+		<li><a href="/about">/about</a></li>
+		<li><a href="/contact">/contact</a></li>
+		<li><a href="/rss.xml" target="_blank">/rss.xml</a></li>
 	</ul>
 
 	<Toggle />
