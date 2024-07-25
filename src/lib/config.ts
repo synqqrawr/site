@@ -8,7 +8,7 @@ export const links = [
 		href: '/'
 	},
 	{
-		href: '/blog'
+		href: '/notes'
 	},
 	{
 		href: '/contact'

@@ -2,7 +2,7 @@ import * as config from '$lib/config'
 import type { Post } from '$lib/types'
 
 export async function GET({ fetch }) {
-	const response = await fetch('blog/api/posts')
+	const response = await fetch('notes/api/posts')
 	const posts: Post[] = await response.json()
 
 	const headers = { 'Content-Type': 'application/xml' }
