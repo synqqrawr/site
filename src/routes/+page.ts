@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit'
 
-export async function load() {
+export async function load({ url }) {
 	try {
 		const post = await import(`./page.md`)
 

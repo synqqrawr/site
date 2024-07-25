@@ -4,9 +4,7 @@
 	export let data
 </script>
 
-<svelte:head>
-	<title>{config.title}</title>
-</svelte:head>
+<title>{config.title}</title>
 
 <section>
 	<ul class="gap-8 grid divide-y [&:not(:last-child)]:pb-8">
