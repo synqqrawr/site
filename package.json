@@ -35,7 +35,6 @@
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.0.20",
     "@fontsource/manrope": "^5.0.20",
-    "cssnano": "^7.0.4",
     "lucide-svelte": "^0.412.0",
     "open-props": "^1.7.5",
     "rehype-slug": "^6.0.0",
