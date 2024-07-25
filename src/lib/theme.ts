@@ -7,17 +7,21 @@ type Theme = 'light' | 'dark'
 const userTheme = browser && localStorage.getItem('color-scheme')
 
 // create the store
-const darkMode = browser && window.matchMedia('(prefers-color-scheme: dark)')
-export const theme = writable((userTheme ?? darkMode.matches) ? 'dark' : 'light')
+export const theme = writable(
+	((browser && localStorage.getItem('color-scheme')) ??
+		window.matchMedia('(prefers-color-scheme: dark)').matches)
+		? 'dark'
+		: 'light'
+)
 
 if (browser) {
 	window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (evt) => {
 		if (!userTheme) {
-			const isDarkMode = darkMode.matches
-			theme.update((currentTheme) => {
-				const newTheme = currentTheme === 'dark' ? 'light' : 'dark'
+			const isDarkMode = evt.matches
+			theme.update(() => {
+				const newTheme = isDarkMode ? 'dark' : 'light'
 
-				document.documentElement.setAttribute('data-color-scheme', newTheme)
+				document.documentElement.setAttribute('data-mode', newTheme)
 			})
 		}
 	})
@@ -28,7 +32,7 @@ export function toggleTheme() {
 	theme.update((currentTheme) => {
 		const newTheme = currentTheme === 'dark' ? 'light' : 'dark'
 
-		document.documentElement.setAttribute('data-color-scheme', newTheme)
+		document.documentElement.setAttribute('data-mode', newTheme)
 		localStorage.setItem('color-scheme', newTheme)
 
 		return newTheme

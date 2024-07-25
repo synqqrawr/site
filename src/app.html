@@ -6,13 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 		<script type="module">
-			const theme = localStorage.getItem('color-scheme')
-
-			theme
-				? document.documentElement.setAttribute('data-color-scheme', theme)
-				: window.matchMedia('(prefers-color-scheme: dark)').matches
+			document.documentElement.setAttribute(
+				'data-mode',
+				(localStorage.getItem('color-scheme') ??
+					window.matchMedia('(prefers-color-scheme: dark)').matches)
 					? 'dark'
 					: 'light'
+			)
 		</script>
 	</head>
 	<body data-sveltekit-preload-data="hover">

@@ -8,6 +8,6 @@ export async function load() {
 			content: post.default
 		}
 	} catch (e) {
-		error(404, `Could not find this`)
+		error(404)
 	}
 }

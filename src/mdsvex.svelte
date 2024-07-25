@@ -1,3 +1,3 @@
-<div class="prose">
+<div class="prose dark:prose-invert">
 	<slot />
 </div>

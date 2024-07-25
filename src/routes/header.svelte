@@ -3,12 +3,12 @@
 	import Toggle from './toggle.svelte'
 </script>
 
-<nav>
-	<a href="/" class="title">
+<nav class="flex justify-between w-full items-center py-5">
+	<a href="/" aria-label="Go back home.">
 		<b>{config.title}</b>
 	</a>
 
-	<ul class="links">
+	<ul class="mx-8 sm:flex hidden sm:gap-8 links" aria-label="List of pages to navigate to.">
 		<li><a href="/blog">Blog</a></li>
 		<li><a href="/about">About</a></li>
 		<li><a href="/contact">Contact</a></li>
@@ -18,30 +18,8 @@
 	<Toggle />
 </nav>
 
-<style>
-	nav {
-		padding-block: var(--size-7);
-	}
-
-	.links {
-		margin-block: var(--size-7);
-	}
-
-	a {
-		color: inherit;
-		text-decoration: none;
-	}
-
-	@media (min-width: 768px) {
-		nav {
-			display: flex;
-			justify-content: space-between;
-		}
-
-		.links {
-			display: flex;
-			gap: var(--size-7);
-			margin-block: 0;
-		}
+<style class="postcss">
+	.links a {
+		@apply text-inherit no-underline;
 	}
 </style>

@@ -9,42 +9,14 @@
 </svelte:head>
 
 <section>
-	<ul class="posts">
+	<ul class="gap-8 grid divide-y [&:not(:last-child)]:pb-8">
 		{#each data.posts as post}
-			<li class="post">
-				<a href="/blog/{post.slug}" class="title">{post.title}</a>
-				<p class="date">{formatDate(post.date)}</p>
-				<p class="description">{post.description}</p>
+			<li class="post" style="max-inline-size: 60ch;">
+				<a href="/blog/{post.slug}" class="text-[clamp(2rem,9vw,3.5rem)] capitalize">{post.title}</a
+				>
+				<p class="text-neutral-400">{formatDate(post.date)}</p>
+				<p class="mt-4">{post.description}</p>
 			</li>
 		{/each}
 	</ul>
 </section>
-
-<style>
-	.posts {
-		display: grid;
-		gap: var(--size-7);
-	}
-
-	.post {
-		max-inline-size: var(--size-content-3);
-	}
-
-	.post:not(:last-child) {
-		border-bottom: 1px solid var(--border);
-		padding-bottom: var(--size-7);
-	}
-
-	.title {
-		font-size: var(--font-size-fluid-3);
-		text-transform: capitalize;
-	}
-
-	.date {
-		color: var(--text-2);
-	}
-
-	.description {
-		margin-top: var(--size-3);
-	}
-</style>
