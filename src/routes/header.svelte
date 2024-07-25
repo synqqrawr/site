@@ -10,10 +10,9 @@
 	</a>
 
 	<ul class="mx-8 sm:flex hidden sm:gap-8 links" aria-label="List of pages to navigate to.">
-		<li><a href="/blog">/blog</a></li>
-		<li><a href="/about">/about</a></li>
-		<li><a href="/contact">/contact</a></li>
-		<li><a href="/rss.xml" target="_blank">/rss.xml</a></li>
+		{#each config.links as link}
+			<li><a href={link.href} target={link.target ?? '_self'}>{link.name ?? link.href}</a></li>
+		{/each}
 	</ul>
 
 	<div class="flex">

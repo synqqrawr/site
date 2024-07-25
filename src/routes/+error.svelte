@@ -3,7 +3,7 @@
 </script>
 
 <div class="prose dark:prose-invert">
-	<h1>{$page.status} | {$page.error.message}</h1>
+	<h1>{$page.status} | {$page.error?.message}</h1>
 	{#if $page.status === 404}
 		<p>
 			Greetings, young traveler. It seems you might be lost. Why not return to the comfort of <a
