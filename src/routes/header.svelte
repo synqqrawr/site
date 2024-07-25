@@ -1,6 +1,7 @@
 <script lang="ts">
 	import * as config from '$lib/config'
 	import Toggle from './toggle.svelte'
+	import Links from './links.svelte'
 </script>
 
 <nav class="flex justify-between w-full items-center py-5">
@@ -15,7 +16,12 @@
 		<li><a href="/rss.xml" target="_blank">/rss.xml</a></li>
 	</ul>
 
-	<Toggle />
+	<div class="flex">
+		<Toggle />
+		<div class="sm:hidden">
+			<Links />
+		</div>
+	</div>
 </nav>
 
 <style class="postcss">

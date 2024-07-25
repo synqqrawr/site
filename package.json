@@ -35,11 +35,16 @@
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.0.20",
     "@fontsource/manrope": "^5.0.20",
-    "lucide-svelte": "^0.412.0",
+    "bits-ui": "^0.21.12",
+    "clsx": "^2.1.1",
+    "lucide-svelte": "^0.414.0",
+    "mode-watcher": "^0.4.0",
     "open-props": "^1.7.5",
     "rehype-slug": "^6.0.0",
     "remark-toc": "^9.0.0",
     "remark-unwrap-images": "^4.0.0",
-    "shiki": "^1.11.0"
+    "shiki": "^1.11.0",
+    "tailwind-merge": "^2.4.0",
+    "tailwind-variants": "^0.2.1"
   }
 }

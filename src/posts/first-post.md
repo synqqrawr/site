@@ -3,8 +3,7 @@ title: First Post
 description: First Post.
 date: '2024-07-25'
 categories:
-  - sveltekit
-  - svelte
+  - site
 published: true
 ---
 
@@ -28,7 +27,9 @@ The development of the site is going \*fine\* but it has some hiccups every so o
 
 So, this site is created using Sveltekit, with Typescript for type-checking because why not, and as for CSS is using TailwindCSS because my friend got me to do so and is hosted via Cloudflare pages. I'm poor so I don't have custom domains and ATM I don't think I do need one.
 
-Also, because I'm too lazy to write a hamburger menu mobile users would be stuck to going to the [HP](/) and clicking one of the pages there. sorry.
+~~Also, because I'm too lazy to write a hamburger menu mobile users would be stuck to going to the [HP](/) and clicking one of the pages there. sorry.~~ Not anymore :)
+
+- E (2024-07-25 16:15 JP time): I added shadcn-svelte here, FYI.
 
 ### Evergreen?
 
