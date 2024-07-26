@@ -24,7 +24,7 @@
 		{#each data.meta.categories as category}
 			<a
 				class="dark:bg-neutral-800 dark:text-neutral-50 bg-neutral-100 text-neutral-800"
-				href="/notes?tags={category}"
+				href="/notes/categories/{category}"
 			>
 				<span>&num;{category}</span>
 			</a>

@@ -21,3 +21,7 @@ export const links = [
 		target: '_blank'
 	}
 ]
+
+export const categories = {
+	site: 'Site'
+}
