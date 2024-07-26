@@ -17,10 +17,3 @@
 		{/each}
 	</ul>
 </section>
-
-<style>
-	section {
-		max-inline-size: 60ch;
-		margin-inline: auto;
-	}
-</style>
