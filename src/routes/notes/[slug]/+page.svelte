@@ -22,9 +22,12 @@
 	<!-- Tags -->
 	<div class="tags">
 		{#each data.meta.categories as category}
-			<span class="dark:bg-neutral-800 dark:text-neutral-50 bg-neutral-100 text-neutral-800"
-				>&num;{category}</span
+			<a
+				class="dark:bg-neutral-800 dark:text-neutral-50 bg-neutral-100 text-neutral-800"
+				href="/notes?tags={category}"
 			>
+				<span>&num;{category}</span>
+			</a>
 		{/each}
 	</div>
 
