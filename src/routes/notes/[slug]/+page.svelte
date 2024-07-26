@@ -15,12 +15,12 @@
 <article>
 	<!-- Title -->
 	<hgroup>
-		<h1 class="text-5xl">{data.meta.title}</h1>
-		<p>Published at {formatDate(data.meta.date)}</p>
+		<h1 class="text-5xl capitalize">{data.meta.title}</h1>
+		<p class="mt-2 text-neutral-400">Published at {formatDate(data.meta.date)}</p>
 	</hgroup>
 
 	<!-- Tags -->
-	<div class="tags">
+	<div class="tags flex gap-4 mb-4">
 		{#each data.meta.categories as category}
 			<a
 				class="dark:bg-neutral-800 dark:text-neutral-50 bg-neutral-100 text-neutral-800"
@@ -38,18 +38,6 @@
 </article>
 
 <style>
-	h1 {
-		text-transform: capitalize;
-	}
-
-	h1 + p {
-		@apply mt-2;
-	}
-
-	.tags {
-		@apply flex gap-4 my-4;
-	}
-
 	.tags > * {
 		@apply py-2 px-4;
 		border-radius: 1e5px;
