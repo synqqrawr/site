@@ -14,11 +14,19 @@ const mdsvexOptions = {
 	highlight: {
 		highlighter: async (code, lang = 'text') => {
 			const highlighter = await createHighlighter({
-				themes: ['one-dark-pro'],
+				themes: ['one-dark-pro', 'one-light'],
 				langs: ['javascript', 'typescript']
 			})
 			await highlighter.loadLanguage('javascript', 'typescript')
-			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'one-dark-pro' }))
+			const html = escapeSvelte(
+				highlighter.codeToHtml(code, {
+					lang,
+					themes: { dark: 'one-dark-pro', light: 'one-light' },
+					defaultColor: 'light',
+					cssVariablePrefix: '--shiki-',
+					defaultColor: false
+				})
+			)
 			return `{@html \`${html}\` }`
 		}
 	},
