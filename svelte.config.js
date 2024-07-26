@@ -43,12 +43,9 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
 		adapter: adapter({
-			routes: {
-				include: ['/*'],
-				exclude: ['<all>']
-			},
+			fallback: '404.html',
 			precompress: true,
-			strict: false
+			strict: true
 		})
 	}
 }

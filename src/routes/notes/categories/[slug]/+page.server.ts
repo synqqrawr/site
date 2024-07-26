@@ -6,9 +6,9 @@ export async function load({ fetch, params }) {
 	const response = await fetch('/notes/api/posts')
 	const posts: Post[] = await response.json()
 
-	if (!config.categories[params.category]) {
+	if (!config.categories[params.slug]) {
 		error(404, 'Category does not exist')
+	} else {
+		return { posts: posts.filter((obj) => obj.categories.includes(params.slug)) }
 	}
-
-	return { posts: posts.filter((obj) => obj.categories.includes(params.category)) }
 }
