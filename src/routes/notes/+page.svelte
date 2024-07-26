@@ -9,25 +9,23 @@
 <section>
 	<ul class="gap-8 grid divide-y [&:not(:last-child)]:pb-8">
 		{#each data.posts as post}
-			{#if !data.tags || (data.tags && post.categories.some((item) => data.tags?.includes(item)))}
-				<li class="post" style="max-inline-size: 60ch;">
-					<hgroup>
-						<h1 class="text-5xl capitalize"><a href="/notes/{post.slug}">{post.title}</a></h1>
-						<p class="mt-2 text-neutral-400">{formatDate(post.date)}</p>
-					</hgroup>
-					<div class="tags flex gap-4 mb-4">
-						{#each post.categories as category}
-							<a
-								class="dark:bg-neutral-800 dark:text-neutral-50 bg-neutral-100 text-neutral-800"
-								href="/notes?tags={category}"
-							>
-								<span>&num;{category}</span>
-							</a>
-						{/each}
-					</div>
-					<p>{post.description}</p>
-				</li>
-			{/if}
+			<li class="post" style="max-inline-size: 60ch;">
+				<hgroup>
+					<h1 class="text-5xl capitalize"><a href="/notes/{post.slug}">{post.title}</a></h1>
+					<p class="mt-2 text-neutral-400">{formatDate(post.date)}</p>
+				</hgroup>
+				<div class="tags flex gap-4 mb-4">
+					{#each post.categories as category}
+						<a
+							class="dark:bg-neutral-800 dark:text-neutral-50 bg-neutral-100 text-neutral-800"
+							href="/notes?tags={category}"
+						>
+							<span>&num;{category}</span>
+						</a>
+					{/each}
+				</div>
+				<p>{post.description}</p>
+			</li>
 		{/each}
 	</ul>
 </section>

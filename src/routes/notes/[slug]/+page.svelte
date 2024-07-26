@@ -22,12 +22,9 @@
 	<!-- Tags -->
 	<div class="tags flex gap-4 mb-4">
 		{#each data.meta.categories as category}
-			<a
-				class="dark:bg-neutral-800 dark:text-neutral-50 bg-neutral-100 text-neutral-800"
-				href="/notes?tags={category}"
+			<span class="dark:bg-neutral-800 dark:text-neutral-50 bg-neutral-100 text-neutral-800"
+				>&num;{category}</span
 			>
-				<span>&num;{category}</span>
-			</a>
 		{/each}
 	</div>
 

@@ -1,15 +1,8 @@
-import type { Post } from '$lib/types'
+import type { Posts } from '$lib/types'
 
-export async function load({ params, url, fetch }) {
+export async function load({ fetch }) {
 	const response = await fetch('notes/api/posts')
-	const posts: Post[] = await response.json()
-	const tags = url.searchParams.get('tags')
+	const posts: Posts[] = await response.json()
 
-	return { posts, tags }
+	return { posts }
 }
-
-// export async function load({ params, url }) {
-//     let lang = url.searchParams.get('lang');
-//     let q = url.searchParams.get('q');
-//     return { lang, q };
-// }
