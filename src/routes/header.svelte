@@ -6,7 +6,7 @@
 
 <nav class="flex justify-between w-full items-center py-5">
 	<a href="/" aria-label="Go back home.">
-		<b>{config.title}</b>
+		<b>{config.title}.</b>
 	</a>
 
 	<ul class="mx-8 sm:flex hidden sm:gap-8 links" aria-label="List of pages to navigate to.">
