@@ -6,6 +6,10 @@
 
 <title>{config.title}</title>
 
+<svelte:head>
+	<meta name="description" content={config.descritpion} />
+</svelte:head>
+
 <article>
 	<!-- Post -->
 	<div class="prose dark:prose-invert">
