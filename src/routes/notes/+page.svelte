@@ -12,7 +12,7 @@
 			<li class="post" style="max-inline-size: 60ch;">
 				<hgroup>
 					<h1 class="text-5xl capitalize"><a href="/notes/{post.slug}">{post.title}</a></h1>
-					<p class="mt-2 text-neutral-400">{formatDate(post.date)}</p>
+					<p class="mt-2 text-neutral-700 dark:text-neutral-100">{formatDate(post.date)}</p>
 				</hgroup>
 				<div class="tags flex gap-4 mb-4">
 					{#each post.categories as category}
