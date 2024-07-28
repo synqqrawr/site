@@ -9,7 +9,9 @@
 
 <DropdownMenu.Root>
 	<DropdownMenu.Trigger asChild let:builder>
-		<Button builders={[builder]} variant="outline" size="icon"><Link /></Button>
+		<Button builders={[builder]} variant="outline" size="icon"
+			><Link /> <span class="sr-only">Open link</span>
+		</Button>
 	</DropdownMenu.Trigger>
 	<DropdownMenu.Content class="w-56">
 		{#each config.links as link}
