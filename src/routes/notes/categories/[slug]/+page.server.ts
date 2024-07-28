@@ -7,7 +7,7 @@ export async function load({ fetch, params }) {
 	const posts: Post[] = await response.json()
 
 	if (!config.categories[params.slug]) {
-		error(404, 'Category does not exist')
+		error(404, `Category ${params.slug} does not exist`)
 	} else {
 		return { posts: posts.filter((obj) => obj.categories.includes(params.slug)) }
 	}
