@@ -7,7 +7,7 @@
 <title>{config.title}</title>
 
 <svelte:head>
-	<meta name="description" content={config.descritpion} />
+	<meta name="description" content={config.description} />
 </svelte:head>
 
 <article>
