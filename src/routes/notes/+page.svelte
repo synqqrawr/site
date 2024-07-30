@@ -6,6 +6,10 @@
 
 <title>{config.title}</title>
 
+<svelte:head>
+	<meta name="description" content={config.description} />
+</svelte:head>
+
 <section>
 	<ul class="gap-8 grid divide-y [&:not(:last-child)]:pb-8">
 		{#each data.posts as post}
