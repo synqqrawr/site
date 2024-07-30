@@ -38,3 +38,8 @@ I don't want information to be lost to time but, at the same time the informatio
 ### Some goals from now on
 
 I think I would like to make like a giant public bookmarks page where I'll just link various links that I find useful. A downside is that because with the current state of the interent, some websites might, oopsies, disappear or have their domains changed so I'll have to deal with that. (tbf, just pasting the IPs to the sites would solve the second issue but with that comes it's own issues so, yeah :\P)
+
+## Changes to this post.
+
+- All the ~~strikethrough text~~ you can see above. I forgot to create this section, sorry.  
+- 2024-07-30 15:35 JP Time: Created this whole section 
