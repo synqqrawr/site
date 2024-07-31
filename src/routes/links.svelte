@@ -4,13 +4,13 @@
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js'
 	import * as config from '$lib/config'
 
-	import { Link } from 'lucide-svelte'
+  import LucideLink from '~icons/lucide/link';
 </script>
 
 <DropdownMenu.Root>
 	<DropdownMenu.Trigger asChild let:builder>
 		<Button builders={[builder]} variant="outline" size="icon"
-			><Link /> <span class="sr-only">Open link</span>
+			><LucideLink /> <span class="sr-only">Open link</span>
 		</Button>
 	</DropdownMenu.Trigger>
 	<DropdownMenu.Content class="w-56">
