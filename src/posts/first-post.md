@@ -25,21 +25,17 @@ The development of the site is going \*fine\* but it has some hiccups every so o
 
 ### Techy nerdy things about the site.
 
-So, this site is created using Sveltekit, with Typescript for type-checking because why not, and as for CSS is using TailwindCSS because my friend got me to do so and is hosted via Cloudflare pages. I'm poor so I don't have custom domains and ATM I don't think I do need one.
-
-~~Also, because I'm too lazy to write a hamburger menu mobile users would be stuck to going to the [HP](/) and clicking one of the pages there. sorry.~~ Not anymore :)
-
-- E (2024-07-25 16:15 JP time): I added shadcn-svelte here, FYI.
+So, this site is created using Sveltekit, with Typescript for type-checking because why not, and as for CSS is using TailwindCSS because my friend got me to do so and is hosted via Cloudflare pages. Also, I'm using shadcn-svelte because why not? :\) I'm poor so I don't have custom domains and ATM I don't think I do need one.
 
 ### Evergreen?
 
-I don't want information to be lost to time but, at the same time the information on this site probably won't be useful anyways so at the current momment git commit history should suffice. So yes, this blog will, at the current momment be evergreen but, I'll probably want to archive historical versions of the site so I'll deal with that later.
+Posts that I write \*will\* be updated to stay up-to-date (If I can :D) but, previous versions can be found on my [Git repo](https://github.com/synqqrawr/site).
 
 ### Some goals from now on
 
-I think I would like to make like a giant public bookmarks page where I'll just link various links that I find useful. A downside is that because with the current state of the interent, some websites might, oopsies, disappear or have their domains changed so I'll have to deal with that. (tbf, just pasting the IPs to the sites would solve the second issue but with that comes it's own issues so, yeah :\P)
+I think I would like to make like a giant public bookmarks page where I'll just link various links that I find useful. A downside is that because with the current state of the interent, some websites might, oopsies, disappear or have their domains changed so I'll have to deal with that. (tbf, just pasting the IPs to the sites would solve the second issue but with that comes it's own issues so, yeah :P)
 
 ## Changes to this post.
 
-- All the ~~strikethrough text~~ you can see above. I forgot to create this section, sorry.  
-- 2024-07-30 15:35 JP Time: Created this whole section 
+- All the ~~strikethrough text~~ you can see above. I forgot to create this section, sorry.
+- 2024-07-30 15:35 JP Time: Created this whole section

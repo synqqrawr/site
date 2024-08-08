@@ -1,11 +1,12 @@
 <script lang="ts">
 	import * as config from '$lib/config'
-	import Toggle from './toggle.svelte'
 	import Links from './links.svelte'
+	import MingcuteUfo2Fill from '~icons/mingcute/ufo-2-fill'
 </script>
 
 <nav class="flex justify-between w-full items-center py-5">
-	<a href="/" aria-label="Go back home.">
+	<a href="/" aria-label="Go back home." class="flex gap-1">
+		<MingcuteUfo2Fill />
 		<b>{config.title}.</b>
 	</a>
 
@@ -16,7 +17,6 @@
 	</ul>
 
 	<div class="flex">
-		<Toggle />
 		<div class="sm:hidden">
 			<Links />
 		</div>
