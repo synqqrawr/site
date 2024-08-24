@@ -1,8 +1,8 @@
 <script lang="ts">
+	import '../app.css'
+
 	import Header from './header.svelte'
 	import Footer from './footer.svelte'
-
-	import '../app.css'
 </script>
 
 <div class="layout h-full grid grid-rows-[auto_1fr_auto] px-4">

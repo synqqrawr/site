@@ -47,6 +47,10 @@ const config = {
 			precompress: true,
 			strict: true
 		})
+	},
+	alias: {
+		utils: '$lib/utils',
+		components: '$lib/components'
 	}
 }
 
