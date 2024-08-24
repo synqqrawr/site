@@ -42,11 +42,7 @@ const config = {
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
-		adapter: adapter({
-			fallback: '404.html',
-			precompress: true,
-			strict: true
-		})
+		adapter: adapter()
 	},
 	alias: {
 		utils: '$lib/utils',

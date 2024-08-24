@@ -45,6 +45,7 @@
     "remark-unwrap-images": "^4.0.0",
     "shiki": "^1.14.1",
     "tailwind-merge": "^2.5.2",
-    "tailwind-variants": "^0.2.1"
+    "tailwind-variants": "^0.2.1",
+    "vite-plugin-lightningcss": "^0.0.5"
   }
 }
