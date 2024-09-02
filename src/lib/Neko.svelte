@@ -257,6 +257,6 @@
 		pointer-events: none;
 		image-rendering: pixelated;
 		z-index: 9999;
-		background-image: url(oneko.gif);
+		background-image: url(/oneko.gif);
 	}
 </style>

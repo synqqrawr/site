@@ -43,18 +43,35 @@
 		&nbsp
 	</div>
 	<ul class="flex gap-3">
-		<li><a href="https://reddit.com/asynqq"><BasilRedditSolid class="w-7 h-full" /></a></li>
 		<li>
-			<a href="https://discord.com/users/797422750321999943"><MageDiscord class="w-7 h-full" /></a>
+			<a href="https://reddit.com/asynqq"
+				><BasilRedditSolid class="w-7 h-full" />
+				<p class="sr-only">Reddit profile</p></a
+			>
 		</li>
 		<li>
-			<a href="https://github.com/synqqrawr"><MdiGithub class="w-7 h-full" /></a>
+			<a href="https://discord.com/users/797422750321999943"
+				><MageDiscord class="w-7 h-full" />
+				<p class="sr-only">Discord profile</p></a
+			>
 		</li>
 		<li>
-			<a href="https://sh.itjust.works/u/synqqrawr"><SimpleIconsLemmy class="w-7 h-full" /></a>
+			<a href="https://github.com/synqqrawr"
+				><MdiGithub class="w-7 h-full" />
+				<p class="sr-only">Github profile</p></a
+			>
 		</li>
 		<li>
-			<a href="https://mas.to/@synqqrawr"><MdiMastodon class="w-7 h-full" /></a>
+			<a href="https://sh.itjust.works/u/synqqrawr"
+				><SimpleIconsLemmy class="w-7 h-full" />
+				<p class="sr-only">Lemmy (sh.itjust.works) profile</p></a
+			>
+		</li>
+		<li>
+			<a href="https://mas.to/@synqqrawr"
+				><MdiMastodon class="w-7 h-full" />
+				<p class="sr-only">Matsodon (mas.to) profile</p></a
+			>
 		</li>
 	</ul>
 </article>
