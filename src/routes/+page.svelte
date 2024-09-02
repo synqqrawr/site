@@ -1,7 +1,6 @@
 <script lang="ts">
 	import * as config from '$lib/config'
 
-	import Neko from '$lib/Neko.svelte'
 	import BasilRedditSolid from '~icons/basil/reddit-solid'
 	import MageDiscord from '~icons/mage/discord'
 	import MdiGithub from '~icons/mdi/github'
@@ -15,7 +14,6 @@
 	<meta name="description" content={config.description} />
 </svelte:head>
 
-<Neko />
 <article>
 	<!-- Post -->
 	<div class="prose dark:prose-invert">
