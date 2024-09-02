@@ -11,12 +11,6 @@ export const links = [
 		href: '/notes'
 	},
 	{
-		href: '/contact'
-	},
-	{
-		href: '/about'
-	},
-	{
 		href: '/rss.xml',
 		target: '_blank'
 	}
