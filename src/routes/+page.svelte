@@ -6,6 +6,7 @@
 	import MdiGithub from '~icons/mdi/github'
 	import SimpleIconsLemmy from '~icons/simple-icons/lemmy'
 	import MdiMastodon from '~icons/mdi/mastodon'
+	import IcBaselineReddit from '~icons/ic/baseline-reddit'
 </script>
 
 <title>{config.title}</title>
@@ -66,9 +67,15 @@
 			>
 		</li>
 		<li>
-			<a href="https://mas.to/@synqqrawr"
+			<a href="https://mastodon.social/@synqqrawr"
 				><MdiMastodon class="w-7 h-full" />
 				<p class="sr-only">Matsodon (mas.to) profile</p></a
+			>
+		</li>
+		<li>
+			<a href="https://reddit.com/u/asynqq"
+				><IcBaselineReddit class="w-7 h-full" />
+				<p class="sr-only">Reddit profile</p></a
 			>
 		</li>
 	</ul>
