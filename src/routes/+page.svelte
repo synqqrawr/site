@@ -38,6 +38,8 @@
 			<li>sink</li>
 			<li>synqqrawr</li>
 		</ul>
+
+		GNUPG key:&nbsp<a target="_blank" href="/gpg.txt">GNUPG public key</a>
 		<h3>Some of my accounts:</h3>
 		&nbsp
 	</div>
