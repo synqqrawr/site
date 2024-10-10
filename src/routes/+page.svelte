@@ -45,7 +45,7 @@
 	</div>
 	<ul class="flex gap-3">
 		<li>
-			<a href="https://reddit.com/asynqq"
+			<a href="https://reddit.com/u/asynqq"
 				><BasilRedditSolid class="w-7 h-full" />
 				<p class="sr-only">Reddit profile</p></a
 			>
@@ -72,12 +72,6 @@
 			<a href="https://mastodon.social/@synqqrawr"
 				><MdiMastodon class="w-7 h-full" />
 				<p class="sr-only">Matsodon (mas.to) profile</p></a
-			>
-		</li>
-		<li>
-			<a href="https://reddit.com/u/asynqq"
-				><IcBaselineReddit class="w-7 h-full" />
-				<p class="sr-only">Reddit profile</p></a
 			>
 		</li>
 	</ul>
