@@ -69,9 +69,9 @@
 			>
 		</li>
 		<li>
-			<a href="https://mastodon.social/@synqqrawr"
+			<a href="https://fosstodon.org/@synqqrawr"
 				><MdiMastodon class="w-7 h-full" />
-				<p class="sr-only">Matsodon (mas.to) profile</p></a
+				<p class="sr-only">Matsodon (fosstodon.org) profile</p></a
 			>
 		</li>
 	</ul>
