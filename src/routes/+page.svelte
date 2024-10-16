@@ -39,7 +39,10 @@
 			<li>synqqrawr</li>
 		</ul>
 
-		GNUPG key:&nbsp<a target="_blank" href="/gpg.txt">GNUPG public key</a>
+		GNUPG key:&nbsp<a target="_blank" href="/gpg.txt">GNUPG public key</a> &lt;<a
+			href="mailto:contact.carbon479@passfwd.com">contact.carbon479@passfwd.com</a
+		>
+		(alias) &gt;
 		<h3>Some of my accounts:</h3>
 		&nbsp
 	</div>
