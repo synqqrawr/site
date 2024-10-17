@@ -6,7 +6,6 @@
 	import MdiGithub from '~icons/mdi/github'
 	import SimpleIconsLemmy from '~icons/simple-icons/lemmy'
 	import MdiMastodon from '~icons/mdi/mastodon'
-	import IcBaselineReddit from '~icons/ic/baseline-reddit'
 </script>
 
 <title>{config.title}</title>
@@ -18,7 +17,7 @@
 <article>
 	<!-- Post -->
 	<div class="prose dark:prose-invert">
-		<h2>Welcome Aboard! 🚀</h2>
+		<h1>Welcome Aboard! 🚀</h1>
 		<p>
 			Hey there, and welcome to my little corner of the internet! Feel free to take a look around.
 			Here are some links to the pages of this site:
