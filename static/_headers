@@ -5,3 +5,7 @@
 /
   Cache-Control: no-cache
   Strict-Transport-Security: max-age=0
+
+/*.html
+  Cache-Control: no-cache
+  Strict-Transport-Security: max-age=0
