@@ -43,7 +43,10 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
 		adapter: adapter(),
-		inlineStyleThreshold: 1024
+		paths: {
+			relative: false
+		},
+		inlineStyleThreshold: Infinity
 	},
 	alias: {
 		utils: '$lib/utils',

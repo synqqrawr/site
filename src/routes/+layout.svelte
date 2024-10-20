@@ -5,7 +5,7 @@
 	import Footer from './footer.svelte'
 </script>
 
-<div class="layout h-full grid grid-rows-[auto_1fr_auto] px-4" style="max-inline-size:1440px;">
+<div class="layout h-full grid grid-rows-[auto_1fr_auto] px-4">
 	<Header />
 	<main class="break-words">
 		<slot />

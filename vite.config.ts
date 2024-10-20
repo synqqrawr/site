@@ -13,6 +13,6 @@ export default defineConfig({
 		}),
 		lightningcss({
 			browserslist: '>= 0.25%'
-		})
+		}),
 	]
 })
