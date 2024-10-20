@@ -1,6 +1,6 @@
 <script lang="ts">
 	import * as config from '$lib/config'
-	import Links from './links.svelte'
+	// import Links from './links.svelte'
 	import MingcuteUfo2Fill from '~icons/mingcute/ufo-2-fill'
 </script>
 
@@ -18,7 +18,7 @@
 
 	<div class="flex">
 		<div class="sm:hidden">
-			<Links />
+			<!-- <Links /> -->
 		</div>
 	</div>
 </nav>

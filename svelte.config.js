@@ -4,7 +4,7 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 import { mdsvex, escapeSvelte } from 'mdsvex'
 import { createHighlighter } from 'shiki'
 
-import remarkUnwrapImages from 'remark-unwrap-images'
+import rehypeUnwrapImages from 'rehype-unwrap-images'
 import remarkToc from 'remark-toc'
 import rehypeSlug from 'rehype-slug'
 
@@ -30,8 +30,8 @@ const mdsvexOptions = {
 			return `{@html \`${html}\` }`
 		}
 	},
-	remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }]],
-	rehypePlugins: [rehypeSlug],
+	remarkPlugins: [remarkToc, { tight: true }],
+	rehypePlugins: [rehypeUnwrapImages, rehypeSlug],
 	layout: {
 		_: './src/mdsvex.svelte'
 	}
@@ -42,7 +42,11 @@ const config = {
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		paths: {
+			relative: false
+		},
+		inlineStyleThreshold: Infinity
 	},
 	alias: {
 		utils: '$lib/utils',
