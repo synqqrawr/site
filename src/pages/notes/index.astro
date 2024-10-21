@@ -1,0 +1,28 @@
+---
+import { getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+import All from '../../layouts/All.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<All>
+  <section>
+    <ul class="gap-8 grid [&:not(:last-child)]:pb-8">
+      {
+      posts.map((post) => (
+      <li class="post py-3" style="max-inline-size: 60ch;">
+        <hgroup>
+          <h1 class="text-5xl capitalize"><a href={`/notes/${post.slug}`}>{post.data.title}</a></h1>
+          <p class="mt-2 text-neutral-700 dark:text-neutral-100"><FormattedDate date={post.data.pubDate} /></p>
+        </hgroup>
+        <p>{post.data.description}</p>
+      </li>
+      ))
+      }
+    </ul>
+  </section>
+</All>
