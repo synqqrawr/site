@@ -37,44 +37,29 @@
 			<li>sink</li>
 			<li>synqqrawr</li>
 		</ul>
-
-		GNUPG key:&nbsp<a target="_blank" href="/gpg.txt">GNUPG public key</a> &lt;<a
-			href="mailto:contact.carbon479@passfwd.com">contact.carbon479@passfwd.com</a
-		>
-		(alias) &gt;
-		<h3>Some of my accounts:</h3>
-		&nbsp
+		<h3>Contact me</h3>
+		<ul>
+			<li>
+				<a href="https://reddit.com/u/asynqq">Reddit</a>
+			</li>
+			<li>
+				<a href="https://discord.com/users/797422750321999943">Discord</a>
+			</li>
+			<li>
+				<a href="https://github.com/synqqrawr">Github</a>
+			</li>
+			<li>
+				<a href="https://sh.itjust.works/u/synqqrawr">Lemmy (sh.itjust.works)</a>
+			</li>
+			<li>
+				<a href="https://fosstodon.org/@synqqrawr">Matsodon (fosstodon.org)</a>
+			</li>
+      <li>
+        <a href="https://matrix.to/#/@synqqrawr:matrix.org">Matrix</a>
+      </li>
+      <li>
+        <a href="mailto:contact.carbon479@passfwd.com">contact.carbon479@passfwd.com</a> |&nbsp;<a target="_blank" href="/gpg.txt">./gpg.txt</a>
+        </li>
+		</ul>
 	</div>
-	<ul class="flex gap-3">
-		<li>
-			<a href="https://reddit.com/u/asynqq"
-				><BasilRedditSolid class="w-7 h-full" />
-				<p class="sr-only">Reddit profile</p></a
-			>
-		</li>
-		<li>
-			<a href="https://discord.com/users/797422750321999943"
-				><MageDiscord class="w-7 h-full" />
-				<p class="sr-only">Discord profile</p></a
-			>
-		</li>
-		<li>
-			<a href="https://github.com/synqqrawr"
-				><MdiGithub class="w-7 h-full" />
-				<p class="sr-only">Github profile</p></a
-			>
-		</li>
-		<li>
-			<a href="https://sh.itjust.works/u/synqqrawr"
-				><SimpleIconsLemmy class="w-7 h-full" />
-				<p class="sr-only">Lemmy (sh.itjust.works) profile</p></a
-			>
-		</li>
-		<li>
-			<a href="https://fosstodon.org/@synqqrawr"
-				><MdiMastodon class="w-7 h-full" />
-				<p class="sr-only">Matsodon (fosstodon.org) profile</p></a
-			>
-		</li>
-	</ul>
 </article>
