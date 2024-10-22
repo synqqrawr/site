@@ -2,8 +2,7 @@
 title: First Post
 description: First Post.
 date: '2024-07-25'
-categories:
-  - site
+lastUpd: '2024-10-22'
 published: true
 ---
 
