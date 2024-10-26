@@ -5,4 +5,3 @@ export async function load({ url }) {
 }
 
 export const prerender = true
-export const csr = false
