@@ -16,9 +16,9 @@
 			<li class="post py-3" style="max-inline-size: 60ch;">
 				<hgroup>
 					<h1 class="text-5xl capitalize"><a href="/notes/{post.slug}">{post.title}</a></h1>
-					<p class="mt-2 text-neutral-700 dark:text-neutral-100">{formatDate(post.date)}</p>
+					<p class="mt-2 text-neutral-700 dark:text-neutral-400">{formatDate(post.date)}</p>
 					{#if post.lastUpd}
-						<p class="text-neutral-700 dark:text-neutral-100">Updated on {formatDate(post.lastUpd)}</p>
+						<p class="mb-2 text-neutral-700 dark:text-neutral-400">Updated on {formatDate(post.lastUpd)}</p>
 					{/if}
 				</hgroup>
 				<div class="tags flex gap-4 mb-4"></div>

@@ -16,9 +16,9 @@
 	<!-- Title -->
 	<hgroup>
 		<h1 class="text-5xl capitalize">{data.meta.title}</h1>
-		<p class="mt-2 text-neutral-400">Published at {formatDate(data.meta.date)}</p>
+		<p class="mt-2 dark:text-neutral-400 text-neutral-700">Published at {formatDate(data.meta.date)}</p>
 		{#if data.meta.lastUpd}
-			<p class="text-neutral-400">Updated on {formatDate(data.meta.lastUpd)}</p>
+			<p class="mb-2 dark:text-neutral-400 text-neutral-700">Updated on {formatDate(data.meta.lastUpd)}</p>
 		{/if}
 	</hgroup>
 
