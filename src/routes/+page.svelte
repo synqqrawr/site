@@ -1,11 +1,5 @@
 <script lang="ts">
 	import * as config from '$lib/config'
-
-	import BasilRedditSolid from '~icons/basil/reddit-solid'
-	import MageDiscord from '~icons/mage/discord'
-	import MdiGithub from '~icons/mdi/github'
-	import SimpleIconsLemmy from '~icons/simple-icons/lemmy'
-	import MdiMastodon from '~icons/mdi/mastodon'
 </script>
 
 <title>{config.title}</title>
@@ -16,15 +10,15 @@
 
 <article>
 	<!-- Post -->
-	<div class="prose dark:prose-invert">
-		<h1>Welcome Aboard! 🚀</h1>
+	<div class="prose">
+		<h2>Welcome Aboard! 🚀</h2>
 		<p>
 			Hey there, and welcome to my little corner of the internet! Feel free to take a look around.
 			Here are some links to the pages of this site:
 		</p>
 		<ul>
 			{#each config.links as link}
-				<li><a href={link.href} target={link.target ?? '_self'}>{link.name ?? link.href}</a></li>
+				<li><a href={link.href} target={link.target ?? '_self'}>{link.label ?? link.href}</a></li>
 			{/each}
 		</ul>
 		<h2>~> /bin/whoami</h2>
@@ -54,12 +48,15 @@
 			<li>
 				<a href="https://fosstodon.org/@synqqrawr">Matsodon (fosstodon.org)</a>
 			</li>
-      <li>
-        <a href="https://matrix.to/#/@synqqrawr:matrix.org">Matrix</a>
-      </li>
-      <li>
-        <a href="mailto:contact.carbon479@passfwd.com">contact.carbon479@passfwd.com</a> |&nbsp;<a target="_blank" href="/gpg.txt">./gpg.txt</a>
-        </li>
+			<li>
+				<a href="https://matrix.to/#/@synqqrawr:matrix.org">Matrix</a>
+			</li>
+			<li>
+				<a href="mailto:contact.carbon479@passfwd.com">contact.carbon479@passfwd.com</a> |&nbsp;<a
+					target="_blank"
+					href="/gpg.txt">./gpg.txt</a
+				>
+			</li>
 		</ul>
 	</div>
 </article>
