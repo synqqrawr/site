@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils'
 
-	let { data } = $props()
+	export let data
 </script>
 
 <!-- SEO -->
@@ -9,38 +9,28 @@
 	<title>{data.meta.title}</title>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
+	<meta name="description" content="${data.meta.descritpion}" />
 </svelte:head>
 
 <article>
 	<!-- Title -->
 	<hgroup>
-		<h1>{data.meta.title}</h1>
-		<p style="margin-top: 1.1rem; margin-bottom: 0.1rem;">
-			Published at {formatDate(data.meta.date)}
-		</p>
+		<h1 class="text-5xl capitalize">{data.meta.title}</h1>
+		<p class="mt-2 dark:text-neutral-400 text-neutral-700">Published at {formatDate(data.meta.date)}</p>
 		{#if data.meta.lastUpd}
-			<p style="margin-top: 0.1rem; margin-bottom: 1.1rem;">
-				Last updated at {formatDate(data.meta.lastUpd)}
-			</p>
+			<p class="mb-2 dark:text-neutral-400 text-neutral-700">Updated on {formatDate(data.meta.lastUpd)}</p>
 		{/if}
 	</hgroup>
 
 	<!-- Post -->
-	<div class="prose">
-		<data.content />
+	<div>
+		<svelte:component this={data.content} />
 	</div>
 </article>
 
 <style>
-	article {
-		max-inline-size: 60ch;
-	}
-
-	h1 {
-		text-transform: capitalize;
-	}
-
-	hgroup p {
-		color: var(--text-2);
+	.tags > * {
+		@apply py-2 px-4;
+		border-radius: 1e5px;
 	}
 </style>

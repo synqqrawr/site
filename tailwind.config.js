@@ -18,22 +18,8 @@ const config = {
 				foreground: 'hsl(var(--foreground) / <alpha-value>)'
 			},
 			fontFamily: {
-				sans: [
-					'Inter Variable',
-					'-apple-system',
-					'BlinkMacSystemFont',
-					'avenir next',
-					'avenir',
-					'segoe ui',
-					'helvetica neue',
-					'helvetica',
-					'Ubuntu',
-					'roboto',
-					'noto',
-					'arial',
-					'sans-serif',
-					...fontFamily.sans
-				]
+				sans: ['Inter Variable', '-apple-system', 'BlinkMacSystemFont', 'avenir next', 'avenir', 'segoe ui',
+	'helvetica neue', 'helvetica', 'Ubuntu', 'roboto', 'noto', 'arial', 'sans-serif', ...fontFamily.sans]
 			}
 		}
 	},
