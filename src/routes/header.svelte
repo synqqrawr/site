@@ -3,7 +3,7 @@
 	import { page } from '$app/stores'
 </script>
 
-<nav>
+<nav style="padding-block: 1rem; border-bottom: 1px solid var(--border);">
 	<a
 		href="/"
 		aria-label="Go back home."
@@ -28,11 +28,6 @@
 </nav>
 
 <style>
-	nav {
-		padding-block: 1rem;
-		border-bottom: 1px solid var(--border);
-	}
-
 	.links {
 		margin-block: 3rem;
 	}

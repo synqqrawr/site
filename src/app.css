@@ -50,15 +50,6 @@ li {
 
 /* ... */
 
-.prose :is(h2, h3, h4, h5, h6) {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-}
-
-.prose p:not(:is(h2, h3, h4, h5, h6) + p) {
-	margin-top: 3rem;
-}
-
 .prose :is(ul, ol) {
 	list-style-type: disc;
 	padding-left: 2rem;
