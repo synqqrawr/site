@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as config from '$lib/config'
+	import { page } from '$app/stores'
 </script>
 
 <nav>
@@ -13,7 +14,14 @@
 
 	<ul class="links" aria-label="List of pages to navigate to.">
 		{#each config.links as link}
-			<li><a href={link.href} target={link.target ?? '_self'}>{link.label ?? link.href}</a></li>
+			<li>
+				<a
+					href={link.href}
+					target={link.target ?? '_self'}
+					class:active={!(link.href == $page.url.pathname)}
+					>{link.label ?? link.href}</a
+				>
+			</li>
 		{/each}
 	</ul>
 </nav>
@@ -37,5 +45,12 @@
 		display: flex;
 		gap: 3rem;
 		margin-block: 0;
+	}
+
+	.active {
+    transition: opacity 0.3s;
+		&:not(:hover) {
+			opacity: 0.75;
+		}
 	}
 </style>

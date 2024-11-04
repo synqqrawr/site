@@ -50,4 +50,14 @@
 	.description {
 		margin-top: 1.25rem;
 	}
+
+	.title {
+    transition-duration: 0.3s;
+    transition-property: text-decoration opacity;
+
+		&:not(:hover) {
+			text-decoration-color: transparent;
+      opacity: 70%;
+		}
+	}
 </style>
