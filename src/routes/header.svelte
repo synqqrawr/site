@@ -18,7 +18,8 @@
 				<a
 					href={link.href}
 					target={link.target ?? '_self'}
-					class:active={!(link.href == $page.url.pathname)}
+          style="color: var(--text-1); {link.href == $page.url.pathname ? 'text-decoration: underline;' : ''}"
+					class:unactive={!(link.href == $page.url.pathname)}
 					>{link.label ?? link.href}</a
 				>
 			</li>
@@ -47,7 +48,7 @@
 		margin-block: 0;
 	}
 
-	.active {
+	.unactive {
     transition: opacity 0.3s;
 		&:not(:hover) {
 			opacity: 0.75;
