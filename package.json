@@ -34,5 +34,44 @@
 		"remark-toc": "^9.0.0",
 		"shiki": "^1.14.1",
 		"vite-plugin-lightningcss": "^0.0.5"
+	},
+	"exports": {
+		"./package.json": "./package.json",
+		"./config": {
+			"types": "./package/config.d.ts",
+			"default": "./package/config.js"
+		},
+		".": {
+			"types": "./package/index.d.ts",
+			"svelte": "./package/index.js",
+			"default": "./package/index.js"
+		},
+		"./types": {
+			"types": "./package/types.d.ts",
+			"default": "./package/types.js"
+		},
+		"./utils": {
+			"types": "./package/utils.d.ts",
+			"default": "./package/utils.js"
+		}
+	},
+	"files": [
+		"package"
+	],
+	"typesVersions": {
+		">4.0": {
+			"config": [
+				"./package/config.d.ts"
+			],
+			"index.d.ts": [
+				"./package/index.d.ts"
+			],
+			"types": [
+				"./package/types.d.ts"
+			],
+			"utils": [
+				"./package/utils.d.ts"
+			]
+		}
 	}
 }

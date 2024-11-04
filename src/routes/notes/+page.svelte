@@ -33,7 +33,7 @@
 		max-inline-size: 60ch;
 	}
 
-	.post:not(:last-child) {
+	.post:not(:global(:last-child)) {
 		border-bottom: 1px solid var(--border);
 		padding-bottom: 3rem;
 	}
