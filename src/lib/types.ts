@@ -3,6 +3,6 @@ export type Post = {
 	slug: string
 	description: string
 	date: string
-  lastUpd: string
+	lastUpd: string
 	published: boolean
 }

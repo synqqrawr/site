@@ -1,21 +1,16 @@
 import { dev } from '$app/environment'
 
-export const title = 'async'
+export const title = "async's blog"
 export const description = 'Svelte blog by me'
 export const url = dev ? 'https://localhost:5173' : 'https://synqq.pages.dev'
 export const links = [
 	{
-		href: '/'
-	},
-	{
-		href: '/notes'
+		href: '/notes',
+		label: 'notes'
 	},
 	{
 		href: '/rss.xml',
-		target: '_blank'
+		target: '_blank',
+		label: 'rss'
 	}
 ]
-
-export const categories = {
-	site: 'Site'
-}

@@ -1,5 +1,15 @@
-<footer class="border-t-neutral-300 dark:border-t-neutral-700 border-t-[1px] py-8 my-8">
-	<p class="text-neutral-800 dark:text-neutral-300">
-		made with &lt3 by async 
-	</p>
+<footer>
+	<p class="text-neutral-800 dark:text-neutral-300">made with &lt3 by async</p>
 </footer>
+
+<style>
+	footer {
+		padding-block: 1rem;
+		margin-top: 3rem;
+		border-top: 1px solid var(--border);
+	}
+
+	p {
+		color: var(--text-2);
+	}
+</style>

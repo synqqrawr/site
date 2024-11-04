@@ -1,24 +1,41 @@
 <script lang="ts">
 	import * as config from '$lib/config'
-	// import Links from './links.svelte'
-	import MingcuteUfo2Fill from '~icons/mingcute/ufo-2-fill'
 </script>
 
-<nav class="flex justify-between w-full items-center py-5">
-	<a href="/" aria-label="Go back home." class="flex gap-1">
-		<MingcuteUfo2Fill />
-		<b>{config.title}.</b>
+<nav>
+	<a
+		href="/"
+		aria-label="Go back home."
+		style="gap: 0.25rem; display: flex; padding-bottom: 1rem; font-size: 1.3rem;"
+	>
+		<b>{config.title} ._.</b>
 	</a>
 
-	<ul class="mx-8 flex gap-8 links" aria-label="List of pages to navigate to.">
+	<ul class="links" aria-label="List of pages to navigate to.">
 		{#each config.links as link}
-			<li><a href={link.href} target={link.target ?? '_self'}>{link.name ?? link.href}</a></li>
+			<li><a href={link.href} target={link.target ?? '_self'}>{link.label ?? link.href}</a></li>
 		{/each}
 	</ul>
 </nav>
 
-<style class="postcss">
-	.links a {
-		@apply text-inherit no-underline;
+<style>
+	nav {
+		padding-block: 1rem;
+		border-bottom: 1px solid var(--border);
+	}
+
+	.links {
+		margin-block: 3rem;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.links {
+		display: flex;
+		gap: 3rem;
+		margin-block: 0;
 	}
 </style>
