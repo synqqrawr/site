@@ -4,6 +4,8 @@ description: First Post.
 date: '2024-07-25'
 lastUpd: '2024-10-22'
 published: true
+tags:
+- site
 ---
 
 ## Table of Contents

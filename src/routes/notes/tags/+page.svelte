@@ -1,6 +1,5 @@
 <script lang="ts">
 	import * as config from '$lib/config'
-	import { formatDate } from '$lib/utils'
 	let { data } = $props()
 </script>
 
@@ -13,11 +12,9 @@
 <!-- Posts -->
 <section>
 	<ul class="posts">
-		{#each data.posts as post}
+		{#each data.tags as tags}
 			<li class="post">
-				<h2><a href="notes/{post.slug}">{post.title}</a></h2>
-				<p class="date">{formatDate(post.date)}</p>
-				<p class="description">{post.description}</p>
+				<h1><a href="tags/{tags}">{tags}</a></h1>
 			</li>
 		{/each}
 	</ul>
@@ -36,13 +33,5 @@
 	.post:not(:global(:last-child)) {
 		border-bottom: 1px solid var(--border);
 		padding-bottom: 3rem;
-	}
-
-	.date {
-		color: var(--text-2);
-	}
-
-	.description {
-		margin-top: 1.25rem;
 	}
 </style>

@@ -82,13 +82,3 @@ li {
 a {
 	color: var(--text-1);
 }
-
-.title, .prose a {
-	transition-duration: 0.3s;
-	transition-property: text-decoration opacity;
-
-	&:not(:hover) {
-		text-decoration-color: transparent;
-		opacity: 70%;
-	}
-}

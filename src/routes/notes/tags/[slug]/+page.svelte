@@ -15,7 +15,7 @@
 	<ul class="posts">
 		{#each data.posts as post}
 			<li class="post">
-				<h2><a href="notes/{post.slug}">{post.title}</a></h2>
+				<h2><a href="/notes/{post.slug}">{post.title}</a></h2>
 				<p class="date">{formatDate(post.date)}</p>
 				<p class="description">{post.description}</p>
 			</li>
@@ -37,7 +37,6 @@
 		border-bottom: 1px solid var(--border);
 		padding-bottom: 3rem;
 	}
-
 	.date {
 		color: var(--text-2);
 	}
