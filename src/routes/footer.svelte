@@ -1,5 +1,5 @@
 <footer>
-	<p class="text-neutral-800 dark:text-neutral-300">made with &lt3 by async</p>
+	<p>made with &lt3 by async</p>
 </footer>
 
 <style>
