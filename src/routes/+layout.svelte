@@ -10,7 +10,7 @@
 	let { children }: Props = $props()
 </script>
 
-<div class="layout" data-sveltekit-preload-data="hover" data-sveltekit-preload-code="hover">
+<div class="layout">
 	<Header />
 	<main>
 		{@render children?.()}
