@@ -23,8 +23,8 @@
 				Last updated at {formatDate(data.meta.lastUpd)}
 			</p>
 		{/if}
-    {#each data.meta.tags as tag}
-      tags::<a href="/notes/tags/{tag}">{tag}</a>
+    tags::{#each data.meta.tags as tag}
+      &nbsp<a href="/notes/tags/{tag}">{tag}</a>
     {/each}
 	</hgroup>
 
