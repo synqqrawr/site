@@ -3,7 +3,7 @@
 	import { page } from '$app/stores'
 </script>
 
-<header style="padding-top: 1rem">
+<nav style="padding-block: 1rem; border-bottom: 1px solid var(--border);">
 	<a
 		href="/"
 		aria-label="Go back home."
@@ -11,18 +11,16 @@
 	>
 		<b>{config.title} ._.</b>
 	</a>
-</header>
-<nav style="padding-bottom: 1rem; border-bottom: 1px solid var(--border);">
+
 	<ul class="links" aria-label="List of pages to navigate to.">
 		{#each config.links as link}
 			<li>
 				<a
 					href={link.href}
 					target={link.target ?? '_self'}
-					style="color: var(--text-1); {link.href == $page.url.pathname
-						? 'text-decoration: underline;'
-						: ''}"
-					class:unactive={!(link.href == $page.url.pathname)}>{link.label ?? link.href}</a
+          style="color: var(--text-1); {link.href == $page.url.pathname ? 'text-decoration: underline;' : ''}"
+					class:unactive={!(link.href == $page.url.pathname)}
+					>{link.label ?? link.href}</a
 				>
 			</li>
 		{/each}
@@ -46,7 +44,7 @@
 	}
 
 	.unactive {
-		transition: opacity 0.3s;
+    transition: opacity 0.3s;
 		&:not(:hover) {
 			opacity: 0.75;
 		}
