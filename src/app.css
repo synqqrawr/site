@@ -63,10 +63,6 @@ li {
 	text-wrap: pretty;
 }
 
-.prose {
-	max-width: 65ch;
-}
-
 .prose :is(ul, ol) li::marker {
 	color: var(--text-2);
 }

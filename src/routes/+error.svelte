@@ -2,7 +2,7 @@
 	import { page } from '$app/stores'
 </script>
 
-<div class="prose dark:prose-invert">
+<div class="prose">
 	<h1>{$page.status} | {$page.error?.message}</h1>
 	{#if $page.status === 404}
 		<p>

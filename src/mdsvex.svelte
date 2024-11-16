@@ -8,6 +8,6 @@
 	let { children } = $props()
 </script>
 
-<div class="prose dark:prose-invert">
+<div class="prose">
 	{@render children?.()}
 </div>
