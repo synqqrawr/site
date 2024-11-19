@@ -54,6 +54,10 @@ li {
 
 /* ... */
 
+article {
+  width: clamp(10rem, 100%, 50rem);
+}
+
 .prose :is(ul, ol) {
 	list-style-type: disc;
 	padding-left: 2rem;

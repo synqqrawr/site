@@ -35,10 +35,6 @@
 </article>
 
 <style>
-	article {
-		max-inline-size: 60ch;
-	}
-
 	h1 {
 		text-transform: capitalize;
 	}
