@@ -11,7 +11,7 @@ const minification_options = {
 	minifyCSS: true,
 	minifyJS: true,
 	removeAttributeQuotes: true,
-	removeComments: true, // some hydration code needs comments, so leave them in
+	removeComments: false, // some hydration code needs comments, so leave them in
 	removeOptionalTags: true,
 	removeRedundantAttributes: true,
 	removeScriptTypeAttributes: true,
