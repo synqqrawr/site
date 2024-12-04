@@ -10,8 +10,10 @@
 	let { children }: Props = $props()
 </script>
 
-<Header />
-<main>
-	{@render children?.()}
-</main>
-<Footer />
+<div data-sveltekit-preload-data="hover">
+	<Header />
+	<main>
+		{@render children?.()}
+	</main>
+	<Footer />
+</div>
