@@ -4,13 +4,15 @@
 </script>
 
 <nav style="padding-block: 1rem; border-bottom: 1px solid var(--border);">
-	<a
-		href="/"
-		aria-label="Go back home."
-		style="gap: 0.25rem; display: flex; padding-bottom: 1rem; font-size: 1.3rem;"
-	>
-		<b>{config.title} ._.</b>
-	</a>
+	<header data-sveltekit-preload-data="hover">
+		<a
+			href="/"
+			aria-label="Go back home."
+			style="gap: 0.25rem; display: flex; padding-bottom: 1rem; font-size: 1.3rem;"
+		>
+			<b>{config.title} ._.</b>
+		</a>
+	</header>
 
 	<ul class="links" aria-label="List of pages to navigate to.">
 		{#each config.links as link}
@@ -18,9 +20,10 @@
 				<a
 					href={link.href}
 					target={link.target ?? '_self'}
-          style="color: var(--text-1); {link.href == $page.url.pathname ? 'text-decoration: underline;' : ''}"
-					class:unactive={!(link.href == $page.url.pathname)}
-					>{link.label ?? link.href}</a
+					style="color: var(--text-1); {link.href == $page.url.pathname
+						? 'text-decoration: underline;'
+						: ''}"
+					class:unactive={!(link.href == $page.url.pathname)}>{link.label ?? link.href}</a
 				>
 			</li>
 		{/each}
@@ -44,7 +47,7 @@
 	}
 
 	.unactive {
-    transition: opacity 0.3s;
+		transition: opacity 0.3s;
 		&:not(:hover) {
 			opacity: 0.75;
 		}
