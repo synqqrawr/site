@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as config from '$lib/config'
+	import { page } from '$app/stores'
 </script>
 
 <title>{config.title}</title>
@@ -13,13 +14,7 @@
 	<h2>Welcome Aboard! 🚀</h2>
 	<p>
 		Hey there, and welcome to my little corner of the internet! Feel free to take a look around.
-		Here are some links to the pages of this site:
 	</p>
-	<ul>
-		{#each config.links as link}
-			<li><a href={link.href} target={link.target ?? '_self'}>{link.label ?? link.href}</a></li>
-		{/each}
-	</ul>
 	<h2>~> /bin/whoami</h2>
 	I'm&nbsp<b>[anon]</b> from Japan. I go by a few different aliases, including:
 	<ul>
