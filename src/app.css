@@ -55,7 +55,7 @@ li {
 /* ... */
 
 article {
-  width: clamp(10rem, 100%, 50rem);
+	width: clamp(10rem, 100%, 50rem);
 }
 
 .prose :is(ul, ol) {
@@ -85,4 +85,10 @@ article {
 
 a {
 	color: var(--text-1);
+	text-decoration: underline;
+	text-decoration-color: color-mix(in srgb, var(--text-1), var(--background) 50%);
+  transition: text-decoration-color 0.5s ease-in-out;
+	&:hover {
+		text-decoration-color: var(--text-1);
+	}
 }
