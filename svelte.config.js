@@ -46,9 +46,9 @@ const config = {
 		inlineStyleThreshold: Infinity,
 		csp: {
 			mode: 'hash', // or 'nonce' or 'auto', meaning 'hash' for prerendered and 'nonce' for dynamic
-      directives: {
+			directives: {
 				'script-src': ['self']
-			},
+			}
 		}
 	},
 	alias: {
