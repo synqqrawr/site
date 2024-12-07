@@ -1,5 +1,6 @@
 import { minify } from 'html-minifier'
 import { building } from '$app/environment'
+import type { Handle } from '@sveltejs/kit'
 
 const minification_options = {
 	collapseBooleanAttributes: true,
@@ -20,17 +21,19 @@ const minification_options = {
 	sortClassName: true
 }
 
-/** @type {import('@sveltejs/kit').Handle} */
-export async function handle({ event, resolve }) {
-  let page = '';
-	return resolve(event, {
+export const handle: Handle = async ({ event, resolve }) => {
+	let page = ''
+
+	const response = await resolve(event, {
 		preload: ({ type }) => type === 'font' || type === 'js' || type === 'css',
 
 		transformPageChunk: ({ html, done }) => {
-			page += html;
+			page += html
 			if (done) {
-				return building ? minify(page, minification_options) : page;
+				return building ? minify(page, minification_options) : page
 			}
 		}
 	})
+
+	return response
 }
