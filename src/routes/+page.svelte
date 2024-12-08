@@ -16,15 +16,7 @@
 		Hey there, and welcome to my little corner of the internet! Feel free to take a look around.
 	</p>
 	<h2>~> /bin/whoami</h2>
-	I'm&nbsp<b>[anon]</b> from Japan. I go by a few different aliases, including:
-	<ul>
-		<li>async</li>
-		<li>asyncedd</li>
-		<li>asynqq</li>
-		<li>asynqqboo</li>
-		<li>sink</li>
-		<li>synqqrawr</li>
-	</ul>
+	I'm&nbsp<b>async</b> from Japan.
 	<h3>Contact me</h3>
 	<ul>
 		<li>
