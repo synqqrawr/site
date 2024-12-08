@@ -42,7 +42,7 @@
 
 	.links {
 		display: flex;
-		gap: 3rem;
+		gap: 1.5rem;
 		margin-block: 0;
 	}
 

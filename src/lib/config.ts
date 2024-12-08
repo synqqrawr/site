@@ -7,15 +7,15 @@ export const tags = ['site'] as const
 export const links = [
 	{
 		href: '/',
-    label: '/'
+    label: '/home/'
 	},
 	{
 		href: '/notes',
-		label: '/n/'
+		label: '/notes/'
 	},
 	{
 		href: '/rss.xml',
 		target: '_blank',
-		label: '/rss/'
+		label: '/rss.xml/'
 	}
 ]
