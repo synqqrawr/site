@@ -5,7 +5,7 @@
 <style>
 	footer {
 		padding-block: 1rem;
-		margin-top: 3rem;
+		margin-top: 1rem;
 		border-top: 1px solid var(--border);
 	}
 

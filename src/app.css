@@ -22,13 +22,14 @@ html {
 		'Courier New', monospace;
 }
 
-html,
-body {
-	height: 100%;
-}
-
 body {
 	padding-inline: 1rem;
+	min-height: 100vh;
+}
+
+main {
+	padding: 1rem;
+	min-height: calc(100vh - 16rem);
 }
 
 html {
@@ -87,7 +88,7 @@ a {
 	color: var(--text-1);
 	text-decoration: underline;
 	text-decoration-color: color-mix(in srgb, var(--text-1), var(--background) 50%);
-  transition: text-decoration-color 0.5s ease-in-out;
+	transition: text-decoration-color 0.5s ease-in-out;
 	&:hover {
 		text-decoration-color: var(--text-1);
 	}

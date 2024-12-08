@@ -7,7 +7,7 @@ export const tags = ['site'] as const
 export const links = [
 	{
 		href: '/',
-    label: '~'
+    label: '/'
 	},
 	{
 		href: '/notes',
