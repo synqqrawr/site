@@ -44,17 +44,6 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		inlineStyleThreshold: Infinity,
-		csp: {
-			directives: {
-				'default-src': ['self'],
-				'script-src': ['self'],
-				'style-src': ['self', 'unsafe-inline'],
-				'base-uri': ['self'],
-				'form-action': ['self'],
-				'frame-ancestors': ['none'],
-				'img-src': ['self', 'data:']
-			}
-		}
 	},
 	alias: {
 		utils: '$lib/utils',
